@@ -7,7 +7,7 @@ RSpec.describe 'StaticPages' do
 
   describe 'GET /home' do
     it 'returns http success' do
-      get '/static_pages/home'
+      get static_pages_home_url
       expect(response).to have_http_status(:success)
       assert_select 'title', "Home | #{common_title}"
     end
@@ -15,7 +15,7 @@ RSpec.describe 'StaticPages' do
 
   describe 'GET /help' do
     it 'returns http success' do
-      get '/static_pages/help'
+      get static_pages_help_url
       expect(response).to have_http_status(:success)
       assert_select 'title', "Help | #{common_title}"
     end
@@ -23,7 +23,7 @@ RSpec.describe 'StaticPages' do
 
   describe 'GET /about' do
     it 'returns http success' do
-      get '/static_pages/about'
+      get static_pages_about_url
       expect(response).to have_http_status(:success)
       assert_select 'title', "About | #{common_title}"
     end
