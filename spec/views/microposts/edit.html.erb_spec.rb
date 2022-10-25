@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe 'microposts/edit', type: :view do
-  let!(:user) { FactoryBot.create(:user) }
+RSpec.describe 'microposts/edit' do
+  let!(:user) { create(:user) }
   let(:micropost) do
     Micropost.create!(
       content: 'MyText',
@@ -9,7 +11,7 @@ RSpec.describe 'microposts/edit', type: :view do
     )
   end
 
-  before(:each) do
+  before do
     assign(:micropost, micropost)
   end
 

@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe 'users/edit', type: :view do
+RSpec.describe 'users/edit' do
   let(:user) do
     User.create!(
       name: 'MyString',
@@ -8,7 +10,7 @@ RSpec.describe 'users/edit', type: :view do
     )
   end
 
-  before(:each) do
+  before do
     assign(:user, user)
   end
 

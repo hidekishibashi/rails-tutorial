@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe 'microposts/index', type: :view do
-  let!(:user) { FactoryBot.create(:user) }
-  before(:each) do
+RSpec.describe 'microposts/index' do
+  let!(:user) { create(:user) }
+
+  before do
     assign(:microposts, [
              Micropost.create!(
                content: 'MyText',
