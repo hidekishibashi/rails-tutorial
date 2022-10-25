@@ -1,4 +1,11 @@
-# Ruby on Rails テンプレート リポジトリ
+# Ruby on Rails チュートリアル用リポジトリ
+
+- Ruby on Railsチュートリアルやる
+- 目的：Rails（Ruby含む）知識の穴埋め
+- [第6版](https://railstutorial.jp/chapters/beginning?version=6.0)しか出てない（2022.10.25現在）からそれで進める
+- Rails7はリリースされているのでそれ使う（ついでにRuby3.1.2）
+- Version差異などは吸収しながらよしなに進める
+- Herokuデプロイなどあるっぽいが、そこは目的から外れるのでSKIP予定
 
 ## Versions
 
