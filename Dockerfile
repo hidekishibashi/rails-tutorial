@@ -2,6 +2,13 @@ FROM ruby:3.1.2
 
 RUN mkdir /tutorial
 WORKDIR /tutorial
+
+# install nodejs(LTS)
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && apt-get install -y nodejs
+
+# install yarn
+RUN npm install --global yarn
+
 COPY Gemfile /tutorial/Gemfile
 COPY Gemfile.lock /tutorial/Gemfile.lock
 
