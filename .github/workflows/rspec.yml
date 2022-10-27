@@ -38,6 +38,9 @@ jobs:
           cp config/database.yml.ci config/database.yml
           bundle exec rails db:create RAILS_ENV=test
           bundle exec rails db:migrate RAILS_ENV=test
+      
+      - name: Build Assets
+        run: yarn && yarn build:css
 
       - name: Build and test with rspec
         run: bundle exec rspec
